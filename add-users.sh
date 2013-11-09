@@ -1,5 +1,16 @@
-#! /bin/bash           
 #
+#!/bin/bash
+#
+##
+## DESCRIPTION: import IPA users from file
+## file: col1=group, col2=login, col3=name 
+##
+## AUTHOR: Jose Faisca
+##
+## DATE: 2013.11.8
+##
+## VERSION: 0.1
+##
 
 if [ -z "$1" ];then
     echo "Usage: $0 <inputfile>" 
