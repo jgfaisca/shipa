@@ -17,13 +17,18 @@ if [ -z "$1" ];then
     exit 1
 fi
 
-USERID=""			# LOGIN
-GROUP=""			# Group
-NAME=""				# Name (cn)
-FNAME=""			# Firt Name 
-LNAME=""			# Last Name
-HOMEDIR=""			# Home directory
-LOGFILE="addUsers_IPA.log"	# Log file
+# get input file name without extension
+in=$1
+FILENAME=${in##*/}
+FILENOEXT=${FILENAME%.*}
+
+USERID=""			        # LOGIN
+GROUP=""			        # Group
+NAME=""				        # Name (cn)
+FNAME=""			        # Firt Name 
+LNAME=""			        # Last Name
+HOMEDIR=""			        # Home directory
+LOGFILE="$FILENOEXT.log"	# Log file
 
 #remove logfile
 rm -fv $LOGFILE
