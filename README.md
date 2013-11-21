@@ -1,4 +1,4 @@
 shipa
 =====
 
-shell script to manage IPA
+shell scripts to manage IPA
